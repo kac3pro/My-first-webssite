@@ -41,7 +41,7 @@ nav ul {
 
 }
 nav ul li {
-    display: inline;
+    display: inline-block;
     vertical-align: center;
 }
 nav ul li a {
