@@ -18,6 +18,11 @@ a {
     vertical-align: center;
     margin-left: 1em;
 }
+
+.logo::first-letter {
+    font-size: 1.5em;
+    color: #f60;
+}
 header {
     display:block;
     height: 5rem;
@@ -58,6 +63,14 @@ nav ul li a {
 
 nav ul li:hover {
     background-color: #000;
+}
+#sale {
+    color: #ff6600;
+}
+
+.banner_image {
+    height:75%;
+    background-image: url("https://dummyimage.com/1000x1000");
 }
 
 @media screen and (max-width: 1060px) {
