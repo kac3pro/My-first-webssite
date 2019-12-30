@@ -20,9 +20,8 @@ function generateTemplate(product) {
     let template = Handlebars.compile(templateScript);
 
     let context = {
-        "image": product.image,
-        "name ": product.name,
-        "description": product.description
+
+        "description": product.desc
     };
 
     //console.log(template(context));
