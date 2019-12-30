@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>Best online clothes store! | Clothesmania</title>
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script id="expression-template" type="text/x-handlebars-template">
+        {{image}}
+        {{name}}
+        {{description}}
+    </script>
 </head>
 <body>
 <header>
@@ -24,9 +30,7 @@
     <div class="banner_image">
         <h1 class="banner">Featured</h1>
         <div class="content-placeholder">
-            <img src={{}}>
-            <h2>{{}}</h2>
-            <p>{{}}</p>
+
         </div>
     </div>
 </main>
