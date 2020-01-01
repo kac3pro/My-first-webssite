@@ -75,7 +75,7 @@ nav ul li:hover {
 .banner_image {
     height:40em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -106,7 +106,7 @@ h1.banner {
     font-family: Ubuntu, sans-serif;
     padding: .75em;
     color: #222;
-    transition: background-color .75s;
+    transition: background-color .75s, color .75s;
     min-width: 190px;
 }
 .item-card img {
@@ -117,17 +117,18 @@ h1.banner {
 
 .item-card:hover {
     background-color: #ffc599;
+    color: #000;
 }
 
 @media screen and (max-width: 1060px) {
     nav {
        background-color: #333;
         height: 92%;
-        float: bottom;
         width: 100%;
+        float: none;
     }
     header {
-        height: 80%;
+        height: auto;
     }
     .logo {
         margin: 0 auto;
@@ -145,6 +146,10 @@ h1.banner {
     nav ul li a {
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .banner_image {
+        display: block;
     }
 
 
