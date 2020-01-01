@@ -7,6 +7,7 @@ body {
 
 h1 {
     margin: 0;
+
 }
 
 a {
@@ -164,6 +165,24 @@ footer a:before {
     display: block;
     padding: .5em;
 }
+#catalogue {
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.5rem;
+    padding: 1em;
+}
+
+.product-search {
+    flex-wrap: wrap;
+}
+
+.product-search .item-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+}
+
+
+
 
 @media screen and (max-width: 1060px) {
     nav {
