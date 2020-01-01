@@ -74,7 +74,7 @@ nav ul li:hover {
 }
 
 .banner_image {
-    height:40em;
+    height:45em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -109,6 +109,7 @@ h1.banner {
     color: #222;
     transition: background-color .75s, color .75s;
     min-width: 190px;
+    margin-bottom: 1em;
 }
 .item-card img {
     display: block;
@@ -199,4 +200,16 @@ footer a:before {
 
 
 
+}
+
+@media screen and (max-width: 440px) {
+    .banner_image {
+        height: 80rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner-v.jpg");
+        background-position: right;
+    }
+
+    .contact {
+        width: 100%;
+    }
 }
