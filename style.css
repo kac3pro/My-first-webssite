@@ -39,7 +39,7 @@ input[type=submit] {
 
 }
 
-.newsletter-submit {
+#newsletter-submit {
     display: block;
     width:30%;
     margin: 5em auto 0;
@@ -51,13 +51,13 @@ input[type=submit] {
     transition: box-shadow .7s;
 }
 
-.newsletter-submit:hover {
+#newsletter-submit:hover {
     -webkit-box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.75);
     box-shadow: 0px 4px 9px 1px rgba(0,0,0,0.75);
 }
 
-.newsletter-submit-onclick {
+#newsletter-submit:active {
     background-color: #ff6600;
     color: #fff;
 }
@@ -84,7 +84,7 @@ input[type=submit] {
     margin-left: -20%;
     background-color: #fff;
     border-radius: 1em;
-    border: #ff6600 dashed 0.5em;
+    border: #2f4fad dashed 0.5em;
 }
 
 .newsletter-popup h2 {

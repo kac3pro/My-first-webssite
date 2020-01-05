@@ -1,8 +1,16 @@
-function toggleOverlay() {
-    let overlay = document.getElementsByClassName("overlay");
-    overlay.style.display = "block";
+let overlay = (document.getElementById("overlay"));
 
-}
+window.onload = () => {
+    setTimeout(function() {
+        overlay.style.display = 'block';
+    }, 10000)
+};
+overlay.addEventListener("click", e => {
+    if(e.target.id === 'overlay')
+        overlay.style.display = 'none';
+});
 
-
-document.addEventListener("load", toggleOverlay);
+let submit = document.getElementById('newsletter-submit');
+submit.addEventListener('click', () => {
+   overlay.style.display = 'none';
+});

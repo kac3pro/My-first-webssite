@@ -7,15 +7,15 @@
 
 </head>
 <body>
-<div class="overlay">
-    <div class="newsletter-popup">
+<div class="overlay" id="overlay">
+    <div class="newsletter-popup" id="popup">
         <h2>Subscribe to out newsletter!</h2>
-        <form>
+        <form action="" method="post" onsubmit="return false">
             <div class="email-container">
                 <label for="email">Email:</label>
-                <input id="email" type="email">
+                <input id="email" type="email" name="email">
             </div>
-            <input class="newsletter-submit" type="submit">
+            <input id="newsletter-submit" type="submit">
         </form>
     </div>
 </div>
@@ -61,7 +61,7 @@
     </div>
 </main>
 <footer>
-
+    <span id="newsletter-link"></span>
     <div class="contact">
         <address>3754  Fairmont Avenue, Downing Missouri</address>
         <a href="mailto:helpdesk@clothesmania.com" id="mail">helpdesk@clothesmania.com</a>
