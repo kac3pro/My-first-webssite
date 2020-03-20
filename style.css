@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Ubuntu, sans-serif;
 }
 
 h1 {
@@ -13,6 +14,7 @@ h1 {
 a {
     color: #ff6600;
     text-decoration: none;
+    margin: 0;
 }
 label {
     font-family: Ubuntu, sans-serif;
@@ -97,7 +99,6 @@ input[type=submit] {
 
 .logo {
     float: left;
-    width: 25%;
     color: #fff;
     max-height: 5rem;
     font-family: Girassol;
@@ -182,8 +183,81 @@ h1.banner {
     height: 55%;
 }
 
+.size {
+    position: absolute;
+    padding: 0;
+    top: 5px;
+    left: 2em;
+}
+
 aside {
     float: left;
+    width: 15%;
+    padding-right: 5%;
+}
+
+
+
+.container {
+    display: inline-block;
+    position: relative;
+    left: 3em;
+    top: 1em;
+    height: 2.25em;
+    width: 30%;
+}
+
+.catname {
+    display: block;
+    padding: .25em;
+
+}
+
+.container input {
+    tab-index: -1;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    display: block;
+    tab-index: 0;
+    position: absolute;
+    height: 1.1em;
+    width: 1.1em;
+    border: 3px solid #f60;
+    transition: background-color .5s;
+    margin-right: 1em;
+}
+
+.container input ~ .checkmark:hover {
+    background-color: #f60;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #ff6600;
+}
+
+.checkmark:after {
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    top: 1px;
+    content: "";
+    position: absolute;
+    display: none;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
 }
 
 .item-card {
@@ -195,7 +269,7 @@ aside {
     padding: .75em;
     color: #222;
     transition: color .75s, box-shadow .75s, border-width, .75s;
-    /*min-width: 190px;*/
+    min-width: 190px;
     max-width: 15%;
     margin-bottom: 1em;
     margin-left: 1.5%;

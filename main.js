@@ -14,3 +14,4 @@ let submit = document.getElementById('newsletter-submit');
 submit.addEventListener('click', () => {
    overlay.style.display = 'none';
 });
+
