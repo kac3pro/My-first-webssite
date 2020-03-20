@@ -186,14 +186,13 @@ h1.banner {
 .size {
     position: absolute;
     padding: 0;
-    top: 5px;
     left: 2em;
 }
 
 aside {
     float: left;
     width: 15%;
-    padding-right: 5%;
+    padding-right: 2.5%;
 }
 
 
@@ -210,11 +209,11 @@ aside {
 .catname {
     display: block;
     padding: .25em;
+    font-size: 1.3rem;
 
 }
 
 .container input {
-    tab-index: -1;
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -224,17 +223,26 @@ aside {
 
 .checkmark {
     display: block;
-    tab-index: 0;
     position: absolute;
-    height: 1.1em;
-    width: 1.1em;
-    border: 3px solid #f60;
+    height: 1em;
+    width: 1em;
+    border: 3px solid #111;
     transition: background-color .5s;
     margin-right: 1em;
+    border-radius: 4px;
 }
-
+.container input ~ .checkmark:focus {
+    outline: none;
+    background-color: hsla(25, 100%, 66%, 0.56);
+}
+.container input:checked ~ .checkmark:focus {
+    outline: none;
+}
+.container input:checked ~ .checkmark:focus:after {
+    border-color: #000;
+}
 .container input ~ .checkmark:hover {
-    background-color: #f60;
+    background-color: #ccc;
 }
 
 .container input:checked ~ .checkmark {
@@ -242,10 +250,10 @@ aside {
 }
 
 .checkmark:after {
-    left: 6px;
+    left: 7px;
     width: 5px;
     height: 10px;
-    top: 1px;
+    top: 2px;
     content: "";
     position: absolute;
     display: none;
@@ -254,6 +262,7 @@ aside {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    transition: border-color .5s;
 }
 
 .container input:checked ~ .checkmark:after {
