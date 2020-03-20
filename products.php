@@ -7,6 +7,8 @@
 	<link rel="canonical" href="https://My-first-webssite/products">
 </head>
 <body>
+<!--TODO: Add folded nav and filters on mobiles-->
+<!--TODO: Learn babel-->
 <?php include "partial/header.html"?>
 <h1 id="catalogue">Product Catalogue</h1>
 <aside class="filters">
