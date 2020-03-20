@@ -19,19 +19,7 @@
         </form>
     </div>
 </div>
-<header>
-    <h1 class='logo'><a class="logo" href="./index.html">Clothesmania</a></h1>
-    <nav>
-        <ul>
-            <li><a id="sale" href="products.html">Sale!</a></li>
-            <li><a href="products.html">Men</a></li>
-            <li><a href="products.html">Women</a></li>
-            <li><a href="products.html">Kids</a></li>
-            <li><a href="products.html">Other categories</a></li>
-            <li><a href="products.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+<?php include "partial/header.html" ?>
 <main>
     <div class="banner_image">
         <h1 class="banner">Featured</h1>
@@ -60,15 +48,7 @@
         </div>
     </div>
 </main>
-<footer>
-    <span id="newsletter-link"></span>
-    <div class="contact">
-        <address>3754  Fairmont Avenue, Downing Missouri</address>
-        <a href="mailto:helpdesk@clothesmania.com" id="mail">helpdesk@clothesmania.com</a>
-        <a href="tel:1-234-567-8901" id="phone">1-234-567-8901</a>
-    </div>
-    <span class="cp">&copy Copyrights Clothesmania 2019</span>
-</footer>
+<?php include "partial/footer.html"?>
 <script src="main.js"></script>
 </body>
 </html>
