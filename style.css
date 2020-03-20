@@ -193,6 +193,7 @@ aside {
     float: left;
     width: 15%;
     padding-right: 2.5%;
+    min-width: 204px;
 }
 
 
