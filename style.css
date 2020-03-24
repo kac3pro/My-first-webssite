@@ -163,6 +163,11 @@ nav ul li:hover {
     background-position: center;
 }
 
+.category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h1.banner {
     font-size: 3rem;
     font-family: Ubuntu, sans-serif;
@@ -183,10 +188,11 @@ h1.banner {
     height: 55%;
 }
 
-.size {
+.cat {
     position: absolute;
     padding: 0;
     left: 2em;
+    top: 0.1em
 }
 
 aside {
@@ -194,6 +200,7 @@ aside {
     width: 15%;
     padding-right: 2.5%;
     min-width: 204px;
+    letter-spacing: .09em;
 }
 
 
@@ -205,13 +212,64 @@ aside {
     top: 1em;
     height: 2.25em;
     width: 30%;
+    display: flex;
 }
 
+.red {
+    background-color: #ff2626;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}
+.blue {
+    background-color: dodgerblue;
+}
+.size {
+    min-width: 70px;
+}
+
+.color {
+    min-width: 135px;
+}
+
+.color_icon {
+    border-radius: 100px;
+    width: 1.45em;
+    height: 1.45em;
+    position: relative;
+    left: 6em;
+    top: -.05em;
+    border: 3px solid #333;
+}
 .catname {
+    position: relative;
+    left: 2.3em;
     display: block;
     padding: .25em;
-    font-size: 1.3rem;
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .07em;
+    color: #333;
+}
 
+.filter-break {
+    position: relative;
+    left: 2em;
+    top: 1em;
+    margin-bottom: 2em;
 }
 
 .container input {
