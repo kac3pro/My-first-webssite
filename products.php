@@ -86,7 +86,30 @@
 				<label for="color_gray" class="cat">Gray</label>
 				<div class="color_icon gray"></div>
 			</div>
-
+		</div>
+		<hr class="filter-break"/>
+		<label id="type" class="catname">Type:</label>
+		<div class="category" role="group" aria-labelledby="type">
+			<div class="container type">
+				<input type="checkbox" class="cb" name="type_hoodies" id="type_hoodies" checked tabindex="0" aria-checked="true">
+				<span class="checkmark" tabindex="1" role="checkbox"></span>
+				<label for="type_hoodies" class="cat">Hoodies</label>
+			</div>
+			<div class="container type">
+				<input type="checkbox" class="cb" name="type_tshirts" id="type_tshirts" checked tabindex="0" aria-checked="true">
+				<span class="checkmark" tabindex="1" role="checkbox"></span>
+				<label for="type_tshirts" class="cat">T-shirts</label>
+			</div>
+			<div class="container type">
+				<input type="checkbox" class="cb" name="type_trousers" id="type_trousers" checked tabindex="0" aria-checked="true">
+				<span class="checkmark" tabindex="1" role="checkbox"></span>
+				<label for="type_trousers" class="cat">Trousers</label>
+			</div>
+			<div class="container type">
+				<input type="checkbox" class="cb" name="type_shoes" id="type_shoes" checked tabindex="0" aria-checked="true">
+				<span class="checkmark" tabindex="1" role="checkbox"></span>
+				<label for="type_shoes" class="cat">Shoes</label>
+			</div>
 		</div>
 	</form>
 </aside>
