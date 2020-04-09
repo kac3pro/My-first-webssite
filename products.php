@@ -12,7 +12,7 @@
 <?php include "partial/header.html"?>
 <h1 id="catalogue">Product Catalogue</h1>
 <aside class="filters">
-	<form action="#" onsubmit="">
+	<form action="#" onsubmit="" id="filters">
 		<label id="size" class="catname">Size:</label>
 		<div class="category" role="group" aria-labelledby="size">
 

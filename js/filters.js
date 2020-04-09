@@ -23,3 +23,21 @@ for( let i = 0; i < checkmarks.length; i++) {
         }
     });
 }
+
+
+let inputs = document.querySelectorAll(".filters input");
+
+function sendForm(e) {
+    let formData = new FormData(document.getElementById("filters"));
+    fetch('/api/search.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .catch(error => console.error("Error:", error))
+    .then(response => console.log('Success:', JSON.stringify(response)))
+}
+
+inputs.forEach(input => {
+   addEventListener("click", sendForm);
+});
