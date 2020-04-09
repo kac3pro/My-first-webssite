@@ -1,3 +1,6 @@
+
+
+
 function toggleCb(e) {
     e.checked = !e.checked;
     let checked = e.getAttribute("aria-checked");
@@ -29,13 +32,22 @@ let inputs = document.querySelectorAll(".filters input");
 
 function sendForm(e) {
     let formData = new FormData(document.getElementById("filters"));
-    fetch('/api/search.php', {
+    fetch('api/search.php', {
         method: 'POST',
         body: formData
     })
     .then(response => response.json())
     .catch(error => console.error("Error:", error))
-    .then(response => console.log('Success:', JSON.stringify(response)))
+    .then(response => {
+        fetch("partial/item_card.html")
+        .then(response => response.text())
+        .then(template => {
+            let rendered = Mustache.render(template, response);
+            let results = document.getElementById("results");
+            results.innerHTML += rendered;
+        })
+
+    })
 }
 
 inputs.forEach(input => {

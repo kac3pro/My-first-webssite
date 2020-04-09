@@ -8,7 +8,6 @@
 </head>
 <body>
 <!--TODO: Add folded nav and filters on mobiles-->
-<!--TODO: Learn babel-->
 <?php include "partial/header.html"?>
 <h1 id="catalogue">Product Catalogue</h1>
 <aside class="filters">
@@ -113,7 +112,7 @@
 		</div>
 	</form>
 </aside>
-<div class="flex-container product-search">
+<div class="flex-container product-search" id="results">
 	<a href="./catalogue/jeans.html" class="item-card">
 		<img src="./images/jeans.jpg">
 		<h2>jeans title</h2>
@@ -156,6 +155,7 @@
 	</a>
 </div>
 <?php include "partial/footer.html"?>
-<script src="js/filters.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<script src="lib/filters.js"></script>
 </body>
 </html>
