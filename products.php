@@ -156,6 +156,6 @@
 </div>
 <?php include "partial/footer.html"?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-<script src="lib/filters.js"></script>
+<script src="src/filters.js"></script>
 </body>
 </html>

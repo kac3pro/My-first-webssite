@@ -49,6 +49,6 @@
     </div>
 </main>
 <?php include "partial/footer.html"?>
-<script src="lib/newsletter.js"></script>
+<script src="src/newsletter.js"></script>
 </body>
 </html>
